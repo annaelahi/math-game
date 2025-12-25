@@ -1,57 +1,57 @@
-# 🧮  Math Quiz Game
+# 🧮  بازی آزمون ریاضی
 
-A clean, responsive, and lightweight arithmetic quiz game built with modern Vanilla JavaScript. Test your mental math skills against the clock with varying difficulty levels.
+یک بازی آزمون حساب ساده، واکنش‌گرا و سبک که با جاوااسکریپت مدرن ساخته شده است. مهارت‌های ریاضی ذهنی خود را در برابر زمان و با سطوح سختی مختلف آزمایش کنید.
 
 <a href="https://vectorstatic.github.io/Math-Quiz-Game/" target="_blank">
-  <img src="https://img.shields.io/badge/🚀_Start_Here-3b82f6?style=for-the-badge&logoColor=white" alt="Start Here" height="40" />
+  <img src="https://img.shields.io/badge/🚀_شروع_از_اینجا-3b82f6?style=for-the-badge&logoColor=white" alt="شروع از اینجا" height="40" />
 </a>
 
-## ✨ Features
+## ✨ ویژگی‌ها
 
-* **Minimalist Design:** A distraction-free UI built with CSS Flexbox and modern variables for easy theming.
+* **طراحی مینیمال:** یک رابط کاربری بدون حواس‌پرتی ساخته شده با CSS Flexbox و متغیرهای مدرن برای تم‌بندی آسان.
 
-* **5 Difficulty Levels:** Ranges from "Very Easy" (single digits) to "Expert" (complex mixed operations).
+* **۵ سطح سختی:** از "خیلی آسان" (تک رقمی) تا "حرفه‌ای" (عملیات پیچیده ترکیبی).
 
-* **Keyboard Support:** Fully accessible via physical keyboard (Numpad, Backspace, Enter).
+* **پشتیبانی از صفحه کلید:** کاملاً قابل دسترسی از طریق صفحه کلید فیزیکی (صفحه کلید عددی، Backspace، Enter).
 
-* **Quick Mode:** Option to auto-submit answers as soon as they match the target.
+* **حالت سریع:** گزینه ارسال خودکار پاسخ‌ها به محض مطابقت با هدف.
 
-## 🎮 How to Play
+## 🎮 نحوه بازی
 
-1. Select a Difficulty Level from the main menu.
-2. (Optional) Toggle Quick Mode on or off.
-3. Solve the math problem displayed on the screen.
-4. Enter your answer using the on-screen Numpad or your Keyboard.
-5. Beat the timer (20 seconds per question)!
+1. یک سطح سختی را از منوی اصلی انتخاب کنید.
+2. (اختیاری) حالت سریع را روشن یا خاموش کنید.
+3. مسئله ریاضی نمایش داده شده روی صفحه را حل کنید.
+4. پاسخ خود را با استفاده از صفحه کلید عددی روی صفحه یا صفحه کلید خود وارد کنید.
+5. زمان را شکست دهید (۲۰ ثانیه برای هر سوال)!
 
-## 🛠️ Installation & Setup
+## 🛠️ نصب و راه‌اندازی
 
-No build step or installation is required. This project runs entirely in the browser.
+هیچ مرحله ساخت یا نصبی لازم نیست. این پروژه کاملاً در مرورگر اجرا می‌شود.
 
-1. **Clone the repository:**
+1. **کلون کردن مخزن:**
 git clone [https://github.com/VectorStatic/Math-Quiz-Game.git](https://github.com/VectorStatic/Math-Quiz-Game.git)
 
-2. **Open the Game:**
-Simply double-click index.html to open it in your web browser.
+2. **باز کردن بازی:**
+به سادگی روی index.html دوبار کلیک کنید تا در مرورگر وب خود باز شود.
 
-## 📂 Project Structure
+## 📂 ساختار پروژه
 
 ```text
 Math-Quiz-Game/
-├── index.html      # Main game structure
-├── style.css       # Styling, themes, and responsiveness
-├── script.js       # Game logic (Class-based architecture)
-└── README.md       # Documentation
+├── index.html      # ساختار اصلی بازی
+├── style.css       # استایل، تم‌ها و واکنش‌گرایی
+├── script.js       # منطق بازی (معماری مبتنی بر کلاس)
+└── README.md       # مستندات
 ```
 
-## 🚀 Deployment
+## 🚀 استقرار
 
-1. This project is ready for GitHub Pages.
+1. این پروژه برای GitHub Pages آماده است.
 
-2. Go to your repository Settings.
+2. به تنظیمات مخزن خود بروید.
 
-3. Click on "Pages" in the sidebar.
+3. در نوار کناری روی "Pages" کلیک کنید.
 
-4. Select `main` branch as the source.
+4. شاخه `main` را به عنوان منبع انتخاب کنید.
 
-Your game will be live at `https://your-username.github.io/Math-Quiz-Game/`.
+بازی شما در `https://your-username.github.io/Math-Quiz-Game/` فعال خواهد بود.

@@ -40,13 +40,13 @@ class MathQuiz {
         this.dom.quickBtn.addEventListener('click', () => {
             this.config.quickMode = !this.config.quickMode;
             this.dom.quickBtn.classList.toggle('active');
-            this.dom.quickBtn.textContent = `Quick Mode: ${this.config.quickMode ? 'ON' : 'OFF'}`;
+            this.dom.quickBtn.textContent = `حالت سریع: ${this.config.quickMode ? 'روشن' : 'خاموش'}`;
             // Toggle submit button visibility
             this.dom.submitBtn.style.display = this.config.quickMode ? 'none' : 'block';
         });
 
         document.getElementById('btn-info').addEventListener('click', () => {
-            Swal.fire('Quick Mode', 'System will automatically detect the answer as you type. No need to press Submit.', 'info');
+            Swal.fire('حالت سریع', 'سیستم به طور خودکار پاسخ را در حین تایپ شناسایی می کند. نیازی به فشار دادن ارسال نیست.', 'info');
         });
 
         // Keyboard Support
@@ -192,8 +192,8 @@ class MathQuiz {
             this.stats.correct++;
             Swal.fire({
                 icon: 'success',
-                title: 'Correct!',
-                text: `${this.gameData.currentAns} is the answer.`,
+                title: 'درست است!',
+                text: `${this.gameData.currentAns} پاسخ صحیح است.`,
                 timer: 1000,
                 showConfirmButton: false,
                 backdrop: `rgba(0,0,0,0.1)` // minimalist backdrop
@@ -202,8 +202,8 @@ class MathQuiz {
             this.stats.wrong++;
             Swal.fire({
                 icon: 'error',
-                title: 'Wrong!',
-                text: `The correct answer was ${this.gameData.currentAns}`,
+                title: 'اشتباه است!',
+                text: `پاسخ صحیح ${this.gameData.currentAns} بود`,
                 timer: 1500,
                 showConfirmButton: false
             });
@@ -250,8 +250,8 @@ class MathQuiz {
         this.stats.wrong++;
         Swal.fire({
             icon: 'warning',
-            title: 'Time Up!',
-            text: `The answer was ${this.gameData.currentAns}`,
+            title: 'زمان تمام شد!',
+            text: `پاسخ ${this.gameData.currentAns} بود`,
             timer: 1500,
             showConfirmButton: false
         });

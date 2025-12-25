@@ -1,52 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Quiz Game</title>
+    <title>بازی آزمون ریاضی</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
     <main class="app-container">
         <header class="game-header">
-            <h1 class="logo">Math<span class="highlight">Quiz</span></h1>
+            <h1 class="logo">آزمون<span class="highlight">ریاضی</span></h1>
             <div class="score-board">
-                <div class="score-item" title="Total Questions">
-                    <span class="label">Total</span>
+                <div class="score-item" title="تعداد سوالات">
+                    <span class="label">کل</span>
                     <span id="score-total" class="value">0</span>
                 </div>
-                <div class="score-item success" title="Correct Answers">
-                    <span class="label">Correct</span>
+                <div class="score-item success" title="پاسخ‌های درست">
+                    <span class="label">درست</span>
                     <span id="score-correct" class="value">0</span>
                 </div>
-                <div class="score-item danger" title="Wrong Answers">
-                    <span class="label">Wrong</span>
+                <div class="score-item danger" title="پاسخ‌های اشتباه">
+                    <span class="label">اشتباه</span>
                     <span id="score-wrong" class="value">0</span>
                 </div>
             </div>
         </header>
 
         <section id="menu-screen" class="screen active">
-            <h2>Select Difficulty</h2>
+            <h2>انتخاب سختی</h2>
             <div class="difficulty-grid">
-                <button class="btn btn-outline" data-level="1">Very Easy</button>
-                <button class="btn btn-outline" data-level="2">Easy</button>
-                <button class="btn btn-outline" data-level="3">Medium</button>
-                <button class="btn btn-outline" data-level="4">Hard</button>
-                <button class="btn btn-outline" data-level="5">Expert</button>
+                <button class="btn btn-outline" data-level="1">خیلی آسان</button>
+                <button class="btn btn-outline" data-level="2">آسان</button>
+                <button class="btn btn-outline" data-level="3">متوسط</button>
+                <button class="btn btn-outline" data-level="4">سخت</button>
+                <button class="btn btn-outline" data-level="5">حرفه‌ای</button>
             </div>
             
             <div class="options-row">
-                <button id="btn-quick-mode" class="btn btn-secondary">Quick Mode: OFF</button>
+                <button id="btn-quick-mode" class="btn btn-secondary">حالت سریع: خاموش</button>
                 <button id="btn-info" class="btn btn-small" aria-label="Info">?</button>
             </div>
         </section>
 
         <section id="game-screen" class="screen hidden">
             <div class="question-container">
-                <span class="q-label">Question <span id="q-number">1</span></span>
+                <span class="q-label">سوال <span id="q-number">1</span></span>
                 <div id="question-text" class="math-problem">Loading...</div>
             </div>
 
@@ -75,8 +76,8 @@
             </div>
 
             <div class="action-row">
-                <button id="btn-reset" class="btn btn-text">Quit</button>
-                <button id="btn-submit" class="btn btn-primary">Submit</button>
+                <button id="btn-reset" class="btn btn-text">خروج</button>
+                <button id="btn-submit" class="btn btn-primary">ارسال</button>
             </div>
         </section>
     </main>
