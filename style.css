@@ -40,6 +40,84 @@ body {
     position: relative;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .app-container {
+        width: 95%;
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .score-board {
+        font-size: 0.7rem;
+        gap: 5px;
+    }
+
+    .score-item .label {
+        font-size: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .math-problem {
+        font-size: 2rem;
+    }
+
+    .input-area {
+        gap: 5px;
+    }
+
+    #user-input {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .btn-icon {
+        width: 40px;
+        font-size: 1rem;
+    }
+
+    .numpad {
+        gap: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .num-btn {
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+
+    .action-row {
+        gap: 0.5rem;
+    }
+
+    .difficulty-grid {
+        gap: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .options-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-secondary {
+        flex-grow: 0;
+    }
+}
+
 /* Header & Score */
 .game-header {
     display: flex;
@@ -155,6 +233,15 @@ h2 { text-align: center; margin-bottom: 1.5rem; color: var(--primary); }
     color: var(--primary);
     font-weight: bold;
     outline: none;
+    min-height: 60px; /* Make input area larger for touch */
+}
+
+/* Mobile-specific input improvements */
+@media (max-width: 480px) {
+    #user-input {
+        min-height: 50px;
+        padding: 8px;
+    }
 }
 .btn-icon {
     background: #eee;
@@ -182,7 +269,32 @@ h2 { text-align: center; margin-bottom: 1.5rem; color: var(--primary); }
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.1s;
+    min-height: 50px; /* Ensure buttons are large enough for touch */
 }
 .num-btn:active { transform: scale(0.95); background: #e2e6ea; }
 
 .action-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+
+/* Additional mobile improvements */
+@media (max-width: 480px) {
+    .num-btn {
+        min-height: 45px;
+        padding: 12px 0;
+    }
+
+    .numpad {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile for better spacing */
+    }
+
+    .question-container {
+        margin-bottom: 0.8rem;
+    }
+
+    .q-label {
+        font-size: 0.7rem;
+    }
+
+    .timer-container {
+        margin-bottom: 1rem;
+    }
+}
